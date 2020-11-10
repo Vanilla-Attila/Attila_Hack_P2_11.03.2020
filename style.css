@@ -1,0 +1,219 @@
+/*font-family: 'Raleway', sans-serif;*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+ .header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.logo-box {
+    position: relative;
+    /* display: inline-block; */
+    /* top: 5%; */
+    float: left;
+}
+
+.logo {
+    height: 40px;
+}
+
+.heading {
+    /* display: inline-block; */
+    position: absolute;
+    top: 14%;
+}
+.search {
+    position: absolute;
+    top: 24%;
+    width: 150px;
+    height: 50px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.search > i {
+    display: flex;
+    color: black;
+    background:  #e6e9ed;
+    /* font-size: 20px; */
+    top: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    /* padding: 5px; */
+    border-radius: 12px 0px 0px 12px;
+}
+
+.search > input {
+    flex: 1;
+    height: 100%;
+    border: 0.01px solid lightgray;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+input > .searchbut { 
+   position: absolute;
+   top: 0;
+   right: 0;
+  }
+
+.submit {
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #0065FC;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+}  
+
+.search1 {
+    min-width: 255px;
+}
+.filters {
+    top: 180px;
+    position: relative;
+    display: inline-block;
+}
+.filterP {
+    display: inline-block;
+    margin-right: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.button {
+    display: inline-block;
+    height: auto;
+    width: auto; /* Must be auto */
+    border: 0.01px solid #b4adad;
+    border-radius: 36px;
+    outline: none;
+    font-size: 16px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    /* padding-left: 7%; */
+    padding-right: 10%;
+    cursor: pointer;
+    white-space: nowrap;
+    
+}
+
+
+button i {
+    display: flex;
+    /* font-size: 20px; */
+    top: auto;
+    left: 0;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    color: #0065FC;
+    background: #DEEBFF;
+    /* padding: 5px; */
+    border-radius: 12px;
+}
+
+.information {
+    position: absolute;
+    top: 46%;
+    float: left;
+}
+
+.fa-info {
+    height: 10px;
+    color: #0065FC;
+    background: none;
+    display: inline-flex;
+    padding: 5px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+}
+
+.infoP {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.nav , nav {
+    height: 2em;
+    width: auto;
+    float: right;
+
+}
+
+.navli {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navA {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.navli:hover {
+    color: #0065FC;
+    padding-top: 0px;
+    border-top: 3px solid #0065FC;
+}
+.input-group{
+    display: inline-block;
+    inline-size: fit-content;
+    margin: 0px 10px;
+}
+.icon{
+    position: relative;
+    /* left: 61px; */
+    /* height: 50px; */
+    border-radius: 50%;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Footer */
+
+.fFooter {
+    position: absolute;
+    background: #f2f2;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    border: 3px solid red;
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    
+}
+
