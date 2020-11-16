@@ -15,6 +15,11 @@ body {
     padding: 0px 40px;
 }
 
+.main-container {
+    position: relative;
+    min-height: 100vh;
+}
+
  .header {
     position: relative;
     display: inline-block;
@@ -27,7 +32,7 @@ body {
     position: relative;
     display: inline-block;
     top: 39px;
-    float: left;
+    /* float: left; */
 }
 
 .logo {
@@ -93,6 +98,8 @@ input > .searchbut {
     border-radius: 0px 12px 12px 0px;
 }  
 
+
+
 .search1 {
     min-width: 255px;
 }
@@ -112,7 +119,7 @@ input > .searchbut {
     display: inline-block;
     height: auto;
     width: auto; /* Must be auto */
-    border: 0.01px solid #b4adad;
+    border: 2px solid lightgray;
     border-radius: 36px;
     outline: none;
     font-size: 16px;
@@ -120,10 +127,16 @@ input > .searchbut {
     color: black;
     font-weight: bold;
     /* padding-left: 7%; */
-    padding-right: 10%;
+    /* padding-right: 10%; */
+    padding: 0 20px;
     cursor: pointer;
     white-space: nowrap;
     
+}
+
+.button:hover {
+    border: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 
@@ -147,19 +160,24 @@ button i {
     top: 90px;
 }
 
-.pCity {
-    padding-left: 5%;
-}
+/* .pCity {
+     padding-left: 5%; 
+}*/
 
 .info-icon {
     color: #0065FC;
     position: relative;
+    top: -25px;
+    margin-right: 5px;
     border-radius: 50%;
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
+    line-height: 4px;
+    vertical-align: middle;
     border: 0.001px solid #b4adad;
     padding: 10px;
-    height: 5px;
-    width: 5px;
+    /* height: 5px; */
+    /* width: 5px; */
 }
 
 .infoP {
@@ -178,19 +196,19 @@ button i {
     padding: 40px 20px 0px 20px;
 }
 
-.navA {
+.nav-attribute {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
 
 }
 
-.navA:hover {
+.nav-attribute:hover {
     color: #0065FC;
 }
 
 .navli:hover {
-    padding-top: auto;
+    padding-top: 31px;
     border-top: 3px solid #0065FC;
     /* color: #0065FC; Didn't work here */
 }
@@ -201,27 +219,259 @@ button i {
 }
 .icon{
     position: relative;
-    /* left: 61px; */
+    left: -21px;
     /* height: 50px; */
     border-radius: 50%;
     align-items: center;
     padding: 15px;
 }
 
+/* Accomodatios */
+
+/* .accommodations-main { 
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.accommodations-div {
+    position: relative;
+    top: 125px;
+    border-radius: 2%;
+    width: 69%;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+
+.pictures-div {
+    display: inline-block;
+    /* position: relative; */
+    border: 3px solid #f2f2f2;
+    /* margin-bottom: 25px; */
+    background-color: white;
+    box-shadow: 5px 5px 1px 2px #e1e1e1;
+    border-radius: 10%;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.under-picture {
+    padding: 15px;
+}
+.star {
+    color: #0065FC;
+    padding-top: 5px;
+}
+
+.empty-star {
+    color: #f2f2f2;
+}
+
+
+.image1 {
+    display: inline-block;
+    height: 100px;
+    width: 245px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 10% 10% 0 0;
+}
+
+.show-more {
+    color: #000;
+    text-decoration: none;
+}
+
+.show-more:hover {
+    color: #0065FC;
+}
+
+.accommodations-show-more {
+    margin-top: 20px;
+}
+
+.most-popular {
+    position: relative;
+    display: grid;
+    row-gap: 30px;
+    top: -519px;
+    width: 28%;
+    float: right;
+    background: #f2f2f2;
+    border-radius: 2%;
+    padding: 30px;
+}
+
+.mp-h2{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.most-popular-h2 {
+    display: inline-block;
+}
+
+.trending-icon {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.pictures2-div {
+    display: flex;
+    /* position: relative; */
+    /* border: 3px solid #f2f2f2; */
+    /* margin-bottom: 25px; */
+    background-color: white;
+    box-shadow: 5px 5px 1px 2px #e1e1e1;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+.right-of-picture {
+    padding: 5px 15px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.image2 {
+    height: 144px;
+    width: 137px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 10% 0 0 10%;
+}
+
+.pictures2-grid {
+    display: grid;
+    row-gap: 25px;
+}
+
+/* Activities */
+
+.activities-section {
+    min-height: 100vh;
+}
+
+.activities-container {
+    position: relative;
+    top: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 49% 6% 32%;
+}
+
+.activities-h2 {
+    position: relative;
+    top: 180px;
+}
+
+.marseille-pics1 {
+    display: inline-block;
+    height: 450px;
+    width: 330px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 5% 5% 0 0;
+}
+
+.marseille-pics2 {
+    display: inline-block;
+    height: 202px;
+    width: 330px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 5% 5% 0 0;
+}
+
+.marseille-pics3 {
+    display: inline-block;
+    height: 172px;
+    width: 330px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    border-radius: 5% 5% 0 0;
+}
+
+.activities-Marseille {
+    display: inline-block;
+    position: relative;
+    top: -415px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 0px #f2f2f2;
+}
+
+.Marseille-under-pic {
+    padding: 15px;
+}
+
+.Old-Port {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.Pomègues-Fort {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Frioul-Island {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Calanques-National-Park {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.Notre-Dame-de-la-Garde {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Longchamp-Park {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
 /* Footer */
 
-.fFooter {
-    position: fixed;
+.content-wrap {
+    padding-bottom: 15em;
+}
+
+/* .fFooter { 
+   
+}*/
+
+.footer {
+    position: absolute;
+    color: #000;
     background: #f2f2f2;
-    height: auto;
+    height: 15em;
     width: 100%;
     bottom: 0;
     left: 1;
-}
-
-.footer {
-    display: flex;
-    /* position: relative; */
     
 }
 
