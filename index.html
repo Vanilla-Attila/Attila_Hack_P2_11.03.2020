@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +10,9 @@
     <title>Reservia</title>
 </head>
 <body>
-<div class="main-container">
 <div class="content-wrap">
+<div class="main-container">
+
     <header class="header">
         <div class="logo-box">
             <img src="/images/logo/Reservia@3x.png" alt="Reservia logo" class="logo">
@@ -20,7 +22,8 @@
         <ul class="nav">
             <li class="navli"><a href="#" class="nav-attribute">Accomodations</a></li>
             <li class="navli"><a href="#" class="nav-attribute">Activities</a></li>
-            <li class="navli"><a href="#" class="nav-attribute"><strong style="color: #0065FC;">Sign Up</strong></a></li>
+            <li class="navli"><a href="#" class="nav-attribute"><strong class="sign-up">Sign Up</strong></a>
+            </li>
         </ul>
         </nav>
 
@@ -34,14 +37,14 @@
  
     <div class="search">
 
-        <i class="fas fa-map-marker-alt";></i>
-        <input type="text" placeholder="Marseille, France" name="Search box" class="search1">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="text" placeholder="Marseille, France" name="Search-box" class="search1">
             <span class="searchbut">
                 <Button type="submit" class="submit">Search</Button>
             </span>
     </div>
-    <div class="Filters">
-        <form class="filterP">Filters</form>
+    <div class="filters">
+        <p class="filterP">Filters</p>
        
     <div class="input-group">
         
@@ -68,6 +71,59 @@
 </div>
 
    </section>
+
+<!-- Most popular -->
+
+<div class="most-popular-accomodations-div">
+<div class="most-popular">
+    <div class="mp-h2">
+        <h2 class="most-popular-h2">Most popular</h2> <i class="fas fa-chart-line fa-lg trending-icon"></i>
+    </div>
+<div class="pictures2-grid">
+    <div class="pictures2-div" >
+        <img src="/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel picture" class="image2">
+    <div class="right-of-picture">
+         <p><strong>Morning Sun Hotel</strong></p>
+         <p>Night starting at<strong> 128€</strong></p>
+        <div>
+         <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+         </div>
+    </div>
+    </div>
+
+    <div class="pictures2-div" >
+        <img src="/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hotel picture" class="image2">
+    <div class="right-of-picture">
+        <div>
+             <p><strong>Au coeur de l'eau Bed and breakfast</strong></p>
+        </div>
+        <div>
+            <p>Night starting at<strong> 71€</strong></p>
+        </div>
+        <div>
+            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star empty-star"></i>
+        </div>
+    </div>
+    </div>
+
+    <div class="pictures2-div" >
+        <img src="/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel picture" class="image2">
+    <div class="right-of-picture">
+         <span><p><strong>Tout bleu et Blanc Hotel</strong></p></span>
+         <span><p>Night starting at<strong> 68€</strong></p></span>
+
+         <span><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star empty-star"></i></span>
+    </div>
+    </div>
+
+
+</div>
+</div>
+
+
+
+<!-- Accomodations in Marseille -->
+
 <main class="accommodations-main">
     <div class="accommodations-div">
         <div>
@@ -141,64 +197,22 @@
     </div>
 
 </div>
-<div class="most-popular">
-    <div class="mp-h2">
-        <h2 class="most-popular-h2">Most popular</h2> <i class="fas fa-chart-line trending-icon"></i>
-    </div>
-<div class="pictures2-grid">
-    <div class="pictures2-div" >
-        <img src="/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel picture" class="image2">
-    <div class="right-of-picture">
-         <p><strong>Morning Sun Hotel</strong></p>
-         <p>Night starting at<strong> 128€</strong></p>
-        <div>
-         <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
-         </div>
-    </div>
-    </div>
-
-    <div class="pictures2-div" >
-        <img src="/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hotel picture" class="image2">
-    <div class="right-of-picture">
-        <div>
-             <p><strong>Au coeur de l'eau Bed and breakfast</strong></p>
-        </div>
-        <div>
-            <p>Night starting at<strong> 71€</strong></p>
-        </div>
-        <div>
-            <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star empty-star"></i>
-        </div>
-    </div>
-    </div>
-
-    <div class="pictures2-div" >
-        <img src="/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel picture" class="image2">
-    <div class="right-of-picture">
-         <span><p><strong>Tout bleu et Blanc Hotel</strong></p></span>
-         <span><p>Night starting at<strong> 68€</strong></p></span>
-
-         <span><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star empty-star"></i></span>
-    </div>
-    </div>
-
-
-</div>
-</div>
-
-
 
 </main>
+</div>
+<!-- Activities in Marseille -->
+
+
 
 <section class="activities-section">
 
-    <div class="Activities-h2">
+    <div class="activities-h2">
         <h2>Activities in Marseille</h2>
     </div>
 <div class="activities-container">
 <div class="Old-Port">
     <div class="activities-Marseille">
-        <img src="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marseille" class="marseille-pics1">
+        <img src="/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Marseille Old Port" class="marseille-pics1">
 
         <div class="Marseille-under-pic">
             <p><strong>Old Port</strong></p>
@@ -207,7 +221,7 @@
 </div>
 <div class="Pomègues-Fort">
     <div class="activities-Marseille">
-        <img src="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Marseille" class="marseille-pics2">
+        <img src="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues Fort" class="marseille-pics2">
 
         <div class="Marseille-under-pic">
             <p><strong>Pomègues Fort</strong></p>
@@ -216,7 +230,7 @@
 </div>
 <div class="Frioul-Island">
         <div class="activities-Marseille">
-            <img src="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Marseille" class="marseille-pics3">
+            <img src="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" class="marseille-pics3">
     
             <div class="Marseille-under-pic">
                 <p><strong>Frioul Island</strong></p>
@@ -225,7 +239,7 @@
 </div>
 <div class="Calanques-National-Park">
         <div class="activities-Marseille">
-            <img src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Marseille" class="marseille-pics1">
+            <img src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" class="marseille-pics1">
     
             <div class="Marseille-under-pic">
                 <p><strong>Calanques National Park</strong></p>
@@ -234,7 +248,7 @@
 </div>
 <div class="Notre-Dame-de-la-Garde">
         <div class="activities-Marseille">
-            <img src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Marseille" class="marseille-pics3">
+            <img src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="marseille-pics3">
     
             <div class="Marseille-under-pic">
                 <p><strong>Notre-Dame-de-la-Garde</strong></p>
@@ -243,7 +257,7 @@
 </div>
 <div class="Longchamp-Park">
         <div class="activities-Marseille">
-            <img src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Marseille" class="marseille-pics2">
+            <img src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park" class="marseille-pics2">
     
             <div class="Marseille-under-pic">
                 <p><strong>Longchamp Park</strong></p>
@@ -252,10 +266,16 @@
 </div>
     </div>
 
+
+  
+
 </section>
 </div>
-   <footer class="fFooter">
-        <div class="footer"> 
+
+  <!-- Footer -->
+  
+<footer class="footer">
+        <div class="footer-container"> 
             <div class="footer-about">
                 <h2>About</h2>
                 <br>
