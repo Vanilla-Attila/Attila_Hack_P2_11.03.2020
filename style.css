@@ -16,14 +16,12 @@ body {
 }
 
 .main-container {
-    position: relative;
     min-height: 100vh;
     padding: 0 40px;
     padding-bottom: 15em;
 }
 
  .header {
-    position: relative;
     display: inline-block;
     width: 100%;
     height: auto;
@@ -31,10 +29,8 @@ body {
 
 
 .logo-box {
-    position: relative;
+    margin-top: 30px;
     display: inline-block;
-    top: 39px;
-    /* float: left; */
 }
 
 .logo {
@@ -42,13 +38,10 @@ body {
 }
 
 .heading {
-    /* display: inline-block; */
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
 }
 .search {
-    position: relative;
-    top: 39px;
+    margin-top: 39px;
     width: 150px;
     height: 50px;
     border-radius: 20%;
@@ -61,18 +54,14 @@ body {
     display: flex;
     color: black;
     background:  #e6e9ed;
-    /* font-size: 20px; */
-    top: 0;
     height: 100%;
     align-items: center;
     justify-content: center;
     min-width: 50px;
-    /* padding: 5px; */
     border-radius: 12px 0px 0px 12px;
 }
 
 .search > input {
-    flex: 1;
     height: 100%;
     border: 0.01px solid lightgray;
     outline: none;
@@ -82,15 +71,7 @@ body {
     padding-left: 10px;
 }
 
-input > .searchbut { 
-   position: absolute;
-   top: 0;
-   right: 0;
-  }
-
 .submit {
-    top: 0;
-    right: 0;
     width: 100px;
     height: 50px;
     background: #0065FC;
@@ -106,8 +87,7 @@ input > .searchbut {
     min-width: 255px;
 }
 .filters {
-    top: 65px;
-    position: relative;
+    margin-top: 55px;
     display: inline-block;
 }
 .filterP {
@@ -128,8 +108,6 @@ input > .searchbut {
     background: white;
     color: black;
     font-weight: bold;
-    /* padding-left: 7%; */
-    /* padding-right: 10%; */
     padding: 0 20px;
     cursor: pointer;
     white-space: nowrap;
@@ -144,7 +122,6 @@ input > .searchbut {
 
 button i {
     display: flex;
-    /* font-size: 20px; */
     top: auto;
     left: 0;
     height: auto;
@@ -153,13 +130,11 @@ button i {
     min-width: 50px;
     color: #0065FC;
     background: #DEEBFF;
-    /* padding: 5px; */
     border-radius: 12px;
 }
 
 .information {
-    position: relative;
-    top: 90px;
+    margin-top: 50px;
 }
 
 /* .pCity {
@@ -216,10 +191,11 @@ button i {
 }
 
 .navli:hover {
-    padding-top: 31px;
+    padding-top: 37px;
     border-top: 3px solid #0065FC;
     /* color: #0065FC; Didn't work here */
 }
+
 .input-group{
     display: inline-block;
     inline-size: fit-content;
@@ -261,6 +237,7 @@ button i {
     border-radius: 5%;
     padding: 0.5%;
     margin-bottom: 25px;
+    width: 300px;
 }
 
 .flex-container {
@@ -268,6 +245,7 @@ button i {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .under-picture {
@@ -286,7 +264,7 @@ button i {
 .image1 {
     display: inline-block;
     height: 100px;
-    width: 245px;
+    width: 100%;
     object-fit: cover;
     image-rendering: pixelated;
     border-radius: 5% 5% 0 0;
@@ -309,11 +287,11 @@ button i {
     position: relative;
     display: grid;
     row-gap: 37px;
-    top: 127px;
+    top: 126px;
     width: 28%;
     float: right;
     background: #f2f2f2;
-    border-radius: 2%;
+    border-radius: 3%;
     padding: 3%;
 }
 
@@ -508,8 +486,31 @@ button i {
     color: black;
 }
 
+/* Media queries */
 
+@media screen and (min-width: 1738px){
+    .pictures-div {
+         width: 30%;
+    }
+}
 
+@media screen and (max-width: 529px){ 
+
+    .nav {
+        float: none;
+
+    }
+
+    .header .signUp {
+        padding: 0;
+        float: right;
+    }
+    .nav-twos {
+        float: left;
+        position: relative;
+
+    }
+} 
 
 
 
