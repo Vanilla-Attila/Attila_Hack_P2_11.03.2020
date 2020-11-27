@@ -18,7 +18,6 @@ body {
 .main-container {
     min-height: 100vh;
     padding: 0 40px;
-    padding-bottom: 15em;
 }
 
  .header {
@@ -137,9 +136,6 @@ button i {
     margin-top: 50px;
 }
 
-/* .pCity {
-     padding-left: 5%; 
-}*/
 
 .info-icon {
     color: #0065FC;
@@ -162,7 +158,6 @@ button i {
 }
 
 .nav , nav {
-    /* height: 2em; */
     width: auto;
     float: right;
 
@@ -193,7 +188,6 @@ button i {
 .navli:hover {
     padding-top: 37px;
     border-top: 3px solid #0065FC;
-    /* color: #0065FC; Didn't work here */
 }
 
 .input-group{
@@ -204,7 +198,6 @@ button i {
 .icon{
     position: relative;
     left: -21px;
-    /* height: 50px; */
     border-radius: 50%;
     align-items: center;
     padding: 15px;
@@ -218,26 +211,25 @@ button i {
 }*/
 
 .accommodations-div {
-    position: relative;
-    top: 125px;
+    margin-top: 45px;
     border-radius: 2%;
     width: 69%;
     background: #f2f2f2;
     padding: 3%;
 }
-
+.accomodation-h2 {
+    margin-bottom: 25px;
+}
 
 .pictures-div {
     display: inline-block;
-    /* position: relative; */
     border: 3px solid #f2f2f2;
-    /* margin-bottom: 25px; */
     background-color: white;
     box-shadow: 5px 5px 10px 0px #e1e1e1;
     border-radius: 5%;
     padding: 0.5%;
     margin-bottom: 25px;
-    width: 300px;
+    width: 250px;
 }
 
 .flex-container {
@@ -284,10 +276,7 @@ button i {
 }
 
 .most-popular {
-    position: relative;
-    display: grid;
-    row-gap: 37px;
-    top: 126px;
+    margin-top: 45px;
     width: 28%;
     float: right;
     background: #f2f2f2;
@@ -298,7 +287,7 @@ button i {
 .mp-h2{ 
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-bottom: 30px;
 }
 .most-popular-h2 {
     display: inline-block;
@@ -310,23 +299,22 @@ button i {
 }
 
 .pictures2-div {
-    display: flex;
-    /* position: relative; */
-    /* border: 3px solid #f2f2f2; */
-    /* margin-bottom: 25px; */
+    /* float: right; */
     background-color: white;
     box-shadow: 5px 5px 10px 0px #e1e1e1;
     border-radius: 5%;
     padding: 1.5%;
+    margin-bottom: 20px;
 }
 
 .right-of-picture {
     padding: 5px 15px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 17px;
 }
 
 .image2 {
+    float: left;
     height: 148px;
     width: 115px;
     object-fit: cover;
@@ -334,12 +322,12 @@ button i {
     border-radius: 5% 0 0 5%;
 }
 
-.pictures2-grid {
-    display: grid;
-    row-gap: 25px;
+.pictures2-flex {
+    display: flex;
+    flex-direction: column;
 }
 .most-popular-accomodations-div {
-    position: relative;
+    display: inline-block;
 }
 
 /* Activities */
@@ -349,18 +337,16 @@ button i {
 }*/
 
 .activities-container {
-    position: relative;
-    top: 641px;
+    margin-top: 20px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 49% 14% 37%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .activities-h2 {
-    position: relative;
-    top: 180px;
     margin-left: 5px;
+    margin-top: 60px;
 }
 
 .marseille-pics1 {
@@ -374,7 +360,7 @@ button i {
 
 .marseille-pics2 {
     display: inline-block;
-    height: 200px;
+    height: 220px;
     width: 330px;
     object-fit: cover;
     image-rendering: pixelated;
@@ -383,7 +369,7 @@ button i {
 
 .marseille-pics3 {
     display: inline-block;
-    height: 128px;
+    height: 135px;
     width: 330px;
     object-fit: cover;
     image-rendering: pixelated;
@@ -392,59 +378,29 @@ button i {
 
 .activities-Marseille {
     display: inline-block;
-    position: relative;
-    top: -450px;
     border: 1px solid #f2f2f2;
     border-radius: 5%;
     box-shadow: 5px 5px 10px 0px #f2f2f2;
+    margin-bottom: 30px;
 }
 
 .Marseille-under-pic {
     padding: 15px;
 }
 
-.Old-Port {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-.Pomègues-Fort {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+.activities-smaller-pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.Frioul-Island {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
 
-.Calanques-National-Park {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.Notre-Dame-de-la-Garde {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.Longchamp-Park {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
 
 /* Footer */
+
+.footer {
+    margin-top: 50px;
+}
 
 .content-wrap {
     position: relative;
@@ -457,7 +413,7 @@ button i {
     position: absolute;
     color: #000;
     background: #f2f2f2;
-    height: 15em;
+    height: auto;
     width: 100%;
     bottom: 0;
 }
