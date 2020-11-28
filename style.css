@@ -49,6 +49,20 @@ body {
     padding: 0px;
 }
 
+.magnifying-glass {
+    background: none;
+    color: #fff;
+}
+.submit-glass {
+    width: 50px;
+    height: 50px;
+    background: #0065FC;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 12px 12px 12px 12px;
+}
+
 .search > i {
     display: flex;
     color: black;
@@ -68,6 +82,7 @@ body {
     color: black;
     font-weight: bold;
     padding-left: 10px;
+    border-right: none;
 }
 
 .submit {
@@ -134,23 +149,19 @@ button i {
 
 .information {
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 
 .info-icon {
     color: #0065FC;
-    position: relative;
-    top: -25px;
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 50%;
-    /* align-items: center; */
-    text-align: center;
     line-height: 4px;
-    vertical-align: middle;
     border: 0.001px solid #b4adad;
     padding: 10px;
-    /* height: 5px; */
-    /* width: 5px; */
 }
 
 .infoP {
@@ -171,7 +182,17 @@ button i {
 
 .sign-up {
     color: #0065FC;
+    position: relative;
+    right: 0;
+    top: 0;
+
+
 }
+
+/* .nav-twos { 
+    position: relative;
+    right: 90px;
+}*/
 
 .nav-attribute {
     color: black;
@@ -193,7 +214,7 @@ button i {
 .input-group{
     display: inline-block;
     inline-size: fit-content;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 .icon{
     position: relative;
@@ -310,7 +331,7 @@ button i {
 .right-of-picture {
     padding: 5px 15px;
     display: grid;
-    grid-gap: 17px;
+    height: 148px;
 }
 
 .image2 {
@@ -450,28 +471,96 @@ button i {
     }
 }
 
-@media screen and (max-width: 529px){ 
+ @media screen and (max-width: 600px){ 
 
-    .nav {
+    /* .nav { 
         float: none;
 
+    }*/
+
+    .sign-up {
+        top: 40px;
     }
 
-    .header .signUp {
-        padding: 0;
-        float: right;
-    }
     .nav-twos {
-        float: left;
-        position: relative;
+        
+        position: unset;
+        margin-top: 80px;   
 
+    }
+    .navli {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 529px){ 
+
+    /* .nav { 
+        float: none;
+
+    }*/
+
+    .sign-up {
+        top: 0px;
+    }
+
+    .nav-twos {
+        
+        position: unset;
+        margin-top: 40px;   
+
+    }
+    .navli {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1498px){
+    .accommodations-div {
+        width: 60%;
+    }
+    .most-popular {
+        width: 31%;
+    }
+} 
+@media screen and (max-width: 1115px){
+    .accommodations-div {
+        width: 50%;
+    }
+    .most-popular {
+        width: 41%;
     }
 } 
 
-
-
-
-
+@media screen and (max-width: 825px){
+    .accommodations-div {
+        width: 100%;
+        background: none;
+        clear: both;
+    }
+    .most-popular {
+        float: inherit;
+        width: 340px;
+    }
+} 
+@media screen and (max-width: 610px){
+    .submit {
+        display: none;
+    }
+    .submit-glass {
+        display: inline-block;
+        position: relative;
+        right: 10px;
+    }
+} 
+@media screen and (min-width: 610px){
+    .submit {
+        display: inline-block;
+    }
+    .submit-glass {
+        display: none;
+    }
+} 
 
 
 
