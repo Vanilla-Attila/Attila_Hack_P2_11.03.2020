@@ -439,6 +439,10 @@ button i {
     bottom: 0;
 }
 
+.footer-h2 {
+    margin-bottom: 20px;
+}
+
 .footer-about {
     float: left;
     padding: 3% 17% 3% 3%;
@@ -550,7 +554,7 @@ button i {
     .submit-glass {
         display: inline-block;
         position: relative;
-        right: 10px;
+        right: 25px;
     }
 } 
 @media screen and (min-width: 610px){
@@ -561,8 +565,87 @@ button i {
         display: none;
     }
 } 
+@media screen and (max-width: 610px){
+    .main-container {
+        padding: 0 20px;
+    }
+    .pictures-div {
+        width: 315px;
+        padding: 2%;
+    }
 
+    .marseille-pics1 {
+        height: 135px;
+    }
+    .marseille-pics2 {
+        height: 135px;
+    }
+ 
+.activities-container {
+    margin-bottom: 160px;
+}
+.footer-about {
+    padding: 3% 1% 3% 10%;
+}
+.footer-accomodations {
+    padding: 3% 1% 3% 10%;
+}
+.footer-assistance {
+    padding: 3% 1% 3% 10%;
+}
 
+.most-popular {
+    width: auto;
+    margin: 20px -20px;
+    border-radius: 0px;
+    padding: 30px;
+}
 
+.filterP {
+    display: block;
+    margin-bottom: 10px;
+}
 
+.find-vacation-h2 {
+    margin-bottom: 20px;
+}
 
+.navli:hover {
+    padding-top: 0;
+    border-top: none;
+}
+
+.navli {
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    
+    
+}
+.sign-up {
+    position: absolute;
+    right: 40px;
+    top: 41px;
+}
+
+.nav-twos {
+    border-bottom: 3px solid #f2f2f2;
+}
+
+.nav-twos li:hover {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+}
+.nav, nav {
+    float: none;
+    margin: 0px -20px;
+    padding-left: 20px;
+
+}
+.activities-nav {
+    float: right;
+    margin-right: 20%;
+}
+.accomodations-nav {
+     margin-bottom: -3px;
+}
+}
