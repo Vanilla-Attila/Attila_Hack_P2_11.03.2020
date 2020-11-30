@@ -506,11 +506,14 @@ button i {
 
 @media screen and (max-width: 1468px){
     .accommodations-div {
-        background: none;
+        height: auto;
     }
    } 
-
- 
+@media screen and (max-width: 1392px){
+   .activities-container {
+    margin-bottom: 200px;
+}
+}
 
  
 @media screen and (max-width: 1115px){
@@ -526,6 +529,7 @@ button i {
     .accommodations-div {
         width: 100%;
         clear: both;
+        background: none;
     }
     .most-popular {
         float: inherit;
@@ -643,7 +647,7 @@ button i {
     .nav-twos {
         
         position: unset;
-        margin-top: 80px;   
+        margin-top: 0px;   
 
     }
     .navli {
@@ -651,20 +655,13 @@ button i {
     }
 }
 
-@media screen and (max-width: 529px){ 
+@media screen and (max-width: 333px){ 
 
-    
-    .sign-up {
-        top: 0px;
+      .nav-twos {        
+        padding: 0 5px;  
     }
 
-    .nav-twos {
-        
-        position: unset;
-        margin-top: 40px;   
-
-    }
     .navli {
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
 }
