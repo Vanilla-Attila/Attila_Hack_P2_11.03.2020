@@ -237,8 +237,9 @@ button i {
     width: 69%;
     background: #f2f2f2;
     padding: 3%;
+    height: 730px;
 }
-.accomodation-h2 {
+#accomodation-h2 {
     margin-bottom: 25px;
 }
 
@@ -303,8 +304,13 @@ button i {
     background: #f2f2f2;
     border-radius: 3%;
     padding: 3%;
+    height: 730px;
 }
 
+.most-popular-accomodations-div a {
+    text-decoration: none;
+    display: contents;
+}
 .mp-h2{ 
     display: flex;
     justify-content: space-between;
@@ -351,11 +357,9 @@ button i {
     display: inline-block;
 }
 
+
 /* Activities */
 
-/* .activities-section { 
-    min-height: 100vh;
-}*/
 
 .activities-container {
     margin-top: 20px;
@@ -365,7 +369,7 @@ button i {
     flex-wrap: wrap;
 }
 
-.activities-h2 {
+#activities-h2 {
     margin-left: 5px;
     margin-top: 60px;
 }
@@ -468,57 +472,29 @@ button i {
 }
 
 /* Media queries */
+@media screen and (min-width: 2000px){
+    .marseille-pics1 {
+        width: 460px;
+    }
+    .marseille-pics2 {
+        width: 460px;
+    }
+    .marseille-pics3 {
+        width: 460px;
+    }
+    .accommodations-div {
+        height: 770px;
+    }
+    .most-popular {
+        height: 770px;
+    }
+} 
 
 @media screen and (min-width: 1738px){
     .pictures-div {
          width: 30%;
     }
 }
-
- @media screen and (max-width: 600px){ 
-
-    /* .nav { 
-        float: none;
-
-    }*/
-
-    .sign-up {
-        top: 40px;
-    }
-
-    .nav-twos {
-        
-        position: unset;
-        margin-top: 80px;   
-
-    }
-    .navli {
-        padding: 0px 20px;
-    }
-}
-
-@media screen and (max-width: 529px){ 
-
-    /* .nav { 
-        float: none;
-
-    }*/
-
-    .sign-up {
-        top: 0px;
-    }
-
-    .nav-twos {
-        
-        position: unset;
-        margin-top: 40px;   
-
-    }
-    .navli {
-        padding: 0px 20px;
-    }
-}
-
 @media screen and (max-width: 1498px){
     .accommodations-div {
         width: 60%;
@@ -526,7 +502,17 @@ button i {
     .most-popular {
         width: 31%;
     }
-} 
+}
+
+@media screen and (max-width: 1468px){
+    .accommodations-div {
+        background: none;
+    }
+   } 
+
+ 
+
+ 
 @media screen and (max-width: 1115px){
     .accommodations-div {
         width: 50%;
@@ -539,7 +525,6 @@ button i {
 @media screen and (max-width: 825px){
     .accommodations-div {
         width: 100%;
-        background: none;
         clear: both;
     }
     .most-popular {
@@ -648,4 +633,38 @@ button i {
 .accomodations-nav {
      margin-bottom: -3px;
 }
+}
+@media screen and (max-width: 600px){ 
+
+    .sign-up {
+        top: 40px;
+    }
+
+    .nav-twos {
+        
+        position: unset;
+        margin-top: 80px;   
+
+    }
+    .navli {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 529px){ 
+
+    
+    .sign-up {
+        top: 0px;
+    }
+
+    .nav-twos {
+        
+        position: unset;
+        margin-top: 40px;   
+
+    }
+    .navli {
+        padding: 0px 20px;
+    }
 }
