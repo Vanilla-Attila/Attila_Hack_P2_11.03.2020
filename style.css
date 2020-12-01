@@ -213,7 +213,7 @@ button i {
 
 .input-group{
     display: inline-block;
-    inline-size: fit-content;
+    /* inline-size: fit-content; */
     margin: 10px 10px;
 }
 .icon{
@@ -226,10 +226,6 @@ button i {
 
 /* Accomodatios */
 
-/* .accommodations-main { 
-    display: flex;
-    justify-content: space-between;
-}*/
 
 .accommodations-div {
     margin-top: 45px;
@@ -470,6 +466,7 @@ button i {
     text-decoration: none;
     color: black;
 }
+
 
 /* Media queries */
 @media screen and (min-width: 2000px){
